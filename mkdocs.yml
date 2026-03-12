@@ -28,7 +28,7 @@ theme:
 # 导航栏（保持你的原有结构）
 nav:
   - 首页: index.md
-  - 我的笔记: 笔记.md
+  - 我的笔记: notes.md
 
 # 扩展功能（排版/代码美化）
 markdown_extensions:
