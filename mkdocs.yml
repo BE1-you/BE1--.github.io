@@ -1,16 +1,49 @@
-# 网站标题
+# 网站基础信息
 site_name: 北小忧
-# 网站描述（可选）
-site_description: 基于mkdocs+GitHub Pages的个人站点
-# 使用Material主题
+site_description: 前端学习笔记 | 个人成长记录
+site_author: 北小忧
+site_url: https://tangwenwen.com/
+
+# 主题配置（核心美化）
 theme:
   name: material
-# 导航栏配置（对应docs下的文件）
+  # 配色方案（可选：red, pink, purple, indigo, blue, cyan, teal, green, lime, yellow, amber, orange, brown, gray, deep purple）
+  palette:
+    primary: indigo  # 主色调（靛蓝色，清新高级）
+    accent: pink     # 强调色（粉色，点缀按钮/链接）
+  # 自定义字体（更适配中文）
+  font:
+    text: Noto Sans SC  # 中文正文（思源黑体）
+    code: JetBrains Mono  # 代码字体
+  # 界面优化
+  features:
+    - navigation.tabs  # 顶部标签导航（替代左侧纯列表）
+    - navigation.sections  # 导航分组折叠
+    - navigation.top  # 返回顶部按钮
+    - search.suggest  # 搜索建议
+    - search.highlight  # 搜索结果高亮
+    - content.tabs.link  # 内容标签页
+    - toc.follow  # 目录跟随滚动
+
+# 导航栏（保持你的原有结构）
 nav:
   - 首页: index.md
   - 我的笔记: 笔记.md
-# 代码高亮与目录
+
+# 扩展功能（排版/代码美化）
 markdown_extensions:
-  - codehilite
+  - codehilite:
+      linenums: true  # 代码显示行号
   - toc:
-      permalink: true
+      permalink: true  # 目录锚点
+      toc_depth: 3     # 目录层级（1-3级标题）
+  - admonition  # 提示框（✅/⚠️/📌 样式）
+  - pymdownx.details  # 折叠面板
+  - pymdownx.superfences  # 嵌套代码块
+  - pymdownx.emoji:  # 支持emoji表情
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# 自定义CSS（可选，微调样式）
+extra_css:
+  - stylesheets/extra.css
