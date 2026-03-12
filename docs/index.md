@@ -1,17 +1,14 @@
-# Welcome to MkDocs
+# 欢迎来到我的学习笔记 📝
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+这里是我整理的前端开发学习笔记，涵盖 HTML、CSS、JavaScript 核心知识点。
 
-## Commands
+## 快速开始
+- 点击左侧 **「我的笔记」** 查看完整学习内容
+- 包含表单、样式、交互逻辑等实战总结
+- 持续更新中...
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 学习路线
+1.  **HTML**：页面结构与基础标签
+2.  **CSS**：样式布局与响应式设计
+3.  **JavaScript**：交互逻辑与 DOM 操作
+4.  **工程化**：构建工具与框架入门
