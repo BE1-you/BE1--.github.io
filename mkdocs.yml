@@ -1,1 +1,16 @@
-site_name: My Docs
+# 网站标题
+site_name: 北小忧
+# 网站描述（可选）
+site_description: 基于mkdocs+GitHub Pages的个人站点
+# 使用Material主题
+theme:
+  name: material
+# 导航栏配置（对应docs下的文件）
+nav:
+  - 首页: index.md
+  - 我的笔记: 笔记.md
+# 代码高亮与目录
+markdown_extensions:
+  - codehilite
+  - toc:
+      permalink: true
